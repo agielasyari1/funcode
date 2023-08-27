@@ -1,1 +1,1 @@
-# funcode
+incredible journey into the world of programming, filled with creativity and a spirit of exploration. In this project, we craft a variety of code-based applications and solutions that are not only practical but also deliver genuine joy. From designing stunning user interfaces (UI) using CSS to assembling each piece of frontend code, we strive to create not only products but also inspiring experiences. Following the latest trends,
