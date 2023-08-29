@@ -1,0 +1,265 @@
+#body {
+  padding: 1px;
+  background: #CEDEBD;
+  min-height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: captalize;
+  letter-spacing: 2px;
+}
+#body, #body * {
+  transition: all 0.25s;
+}
+#body:before, #body:after, #body *:before, #body *:after {
+  transition: all 0.25s;
+}
+#body .out-wrap {
+  position: relative;
+  padding: 0 50px 50px;
+  box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.25);
+  width: 50%;
+  margin: 50px auto;
+  background: #b71c1c;
+}
+
+#rad {
+  position: relative;
+  position: relative;
+  width: 380px;
+  height: 380px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 50%;
+  background: transparent;
+  overflow: hidden;
+}
+#rad .list {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#rad .list > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px;
+}
+#rad .list > *:nth-of-type(1) {
+  -ms-transform: rotate(0deg) translateY(-150px) rotate(0deg);
+  -webkit-transform: rotate(0deg) translateY(-150px) rotate(0deg);
+  transform: rotate(0deg) translateY(-150px) rotate(0deg);
+  /* &:before{
+       @include transform(rotate($rot * 1deg));
+  } */
+}
+#rad .list > *:nth-of-type(2) {
+  -ms-transform: rotate(51.4285714286deg) translateY(-150px) rotate(-51.4285714286deg);
+  -webkit-transform: rotate(51.4285714286deg) translateY(-150px) rotate(-51.4285714286deg);
+  transform: rotate(51.4285714286deg) translateY(-150px) rotate(-51.4285714286deg);
+  /* &:before{
+       @include transform(rotate($rot * 1deg));
+  } */
+}
+#rad .list > *:nth-of-type(3) {
+  -ms-transform: rotate(102.8571428571deg) translateY(-150px) rotate(-102.8571428571deg);
+  -webkit-transform: rotate(102.8571428571deg) translateY(-150px) rotate(-102.8571428571deg);
+  transform: rotate(102.8571428571deg) translateY(-150px) rotate(-102.8571428571deg);
+  /* &:before{
+       @include transform(rotate($rot * 1deg));
+  } */
+}
+#rad .list > *:nth-of-type(4) {
+  -ms-transform: rotate(154.2857142857deg) translateY(-150px) rotate(-154.2857142857deg);
+  -webkit-transform: rotate(154.2857142857deg) translateY(-150px) rotate(-154.2857142857deg);
+  transform: rotate(154.2857142857deg) translateY(-150px) rotate(-154.2857142857deg);
+  /* &:before{
+       @include transform(rotate($rot * 1deg));
+  } */
+}
+#rad .list > *:nth-of-type(5) {
+  -ms-transform: rotate(205.7142857143deg) translateY(-150px) rotate(-205.7142857143deg);
+  -webkit-transform: rotate(205.7142857143deg) translateY(-150px) rotate(-205.7142857143deg);
+  transform: rotate(205.7142857143deg) translateY(-150px) rotate(-205.7142857143deg);
+  /* &:before{
+       @include transform(rotate($rot * 1deg));
+  } */
+}
+#rad .list > *:nth-of-type(6) {
+  -ms-transform: rotate(257.1428571429deg) translateY(-150px) rotate(-257.1428571429deg);
+  -webkit-transform: rotate(257.1428571429deg) translateY(-150px) rotate(-257.1428571429deg);
+  transform: rotate(257.1428571429deg) translateY(-150px) rotate(-257.1428571429deg);
+  /* &:before{
+       @include transform(rotate($rot * 1deg));
+  } */
+}
+#rad .list > *:nth-of-type(7) {
+  -ms-transform: rotate(308.5714285714deg) translateY(-150px) rotate(-308.5714285714deg);
+  -webkit-transform: rotate(308.5714285714deg) translateY(-150px) rotate(-308.5714285714deg);
+  transform: rotate(308.5714285714deg) translateY(-150px) rotate(-308.5714285714deg);
+  /* &:before{
+       @include transform(rotate($rot * 1deg));
+  } */
+}
+#rad .list > li {
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#rad .list > li a {
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+#rad .list > li a i:before {
+  color: #999;
+  font-size: 20px;
+  transition: all 0.55s;
+}
+#rad .list > li.active a i:before {
+  color: #fff;
+}
+#rad .pointer {
+  position: absolute;
+  left: 80px;
+  right: 80px;
+  top: 80px;
+  bottom: 80px;
+  margin: auto;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  box-shadow: none;
+}
+#rad .pointer:before {
+  content: "";
+  background: #9EB384;
+  left: 0;
+  right: 0;
+  top: -80px;
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 30% 100%);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#rad .pointer:after {
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  z-index: 99;
+  position: absolute;
+  background: #FAF1E4;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+#rad button {
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 0;
+  cursor: pointer;
+  box-shadow: none;
+  background: transparent;
+  border-radius: 50%;
+}
+#rad button:focus {
+  outline: none;
+}
+#rad button > span {
+  height: 2px;
+  background: #435334;
+  width: 50%;
+  position: absolute;
+  transition: all 0.25s 0.25s ease;
+  -moz-transition: all 0.25s 0.25s ease;
+  -webkit-transition: all 0.25s 0.25s ease;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#rad button > span:first-child {
+  bottom: auto;
+  left: auto;
+  top: 30%;
+  right: 25%;
+}
+#rad button > span:last-child {
+  top: auto;
+  right: auto;
+  bottom: 30%;
+  left: 25%;
+}
+#rad button > span:nth-child(2), #rad button > span:nth-child(3) {
+  transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+}
+#rad.open {
+  background: #fff;
+}
+#rad.open .list {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#rad.open .pointer {
+  box-shadow: 0 0 0 40px #fff;
+}
+#rad.open .pointer:after, #rad.open .pointer:before {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#rad.open button span:first-child, #rad.open button span:last-child {
+  transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  width: 0;
+}
+#rad.open button span:nth-child(2) {
+  transition: all 0.25s 0.15s ease;
+  -moz-transition: all 0.25s 0.15s ease;
+  -webkit-transition: all 0.25s 0.15s ease;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#rad.open button span:nth-child(3) {
+  transition: all 0.25s 0.15s ease;
+  -moz-transition: all 0.25s 0.15s ease;
+  -webkit-transition: all 0.25s 0.15s ease;
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
