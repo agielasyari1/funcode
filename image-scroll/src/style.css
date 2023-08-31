@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Condensed&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 html, body, #app {
   width:100%;
@@ -52,6 +52,14 @@ svg {
 #headlines {
   max-width:800px;
   min-width:450px;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+#end {
+  max-width:600px;
+  min-width:300px;
   left:50%;
   top:50%;
   transform:translate(-50%, -50%);
